@@ -141,12 +141,12 @@ local Main = Window:AddTab({
 	Icon = "rbxassetid://11963373994"
 })
 
-Window:AddSection({ Name = "INFORMATION", Tab = Main }) 
+Window:AddSection({ Name = "INFORMATIONðŸ‘‡", Tab = Main }) 
 
 
 Window:AddParagraph({
 	Title = "INFO",
-	Description = "FISCH MODDED V3.",
+	Description = "FISCH MODDED V2 TEST GUI.",
 	Tab = Main
 }) 
 
@@ -295,7 +295,7 @@ Window:AddButton({
 	Description = "FOR ROD POLARIS SERENDE",
 	Tab = Main,
 	Callback = function() 
-	_G.auto = false
+	_G.auto = true
 
 
 while _G.auto do
@@ -314,41 +314,6 @@ end
 		})
 	end,
 }) 
-
-Window:AddTabSection({
-	Name = "Zona Safe",
-	Order = 1,
-})
-
-Window:AddButton({
-	Title = "Zone Safe 1",
-	Description = "Enjoy",
-	Tab = Main,
-	Callback = function() 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(653.305725, 132.064148, 298.943176, -0.511644721, -4.69825778e-09, -0.85919714, -7.41125772e-10, 1, -5.02686115e-09, 0.85919714, -1.93519378e-09, -0.511644721)
-		Window:Notify({
-			Title = "Enjoy",
-			Description = "Enjoy", 
-			Duration = 5
-		})
-	end,
-}) 
-
-
-Window:AddButton({
-	Title = "Zone Safe 2",
-	Description = "Enjoy",
-	Tab = Main,
-	Callback = function() 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(469.303253, 135.386108, 133.070801, 0.541547179, -6.13916953e-08, 0.840670347, -1.49669876e-09, 1, 7.39912238e-08, -0.840670347, -4.13279686e-08, 0.541547179)1)
-		Window:Notify({
-			Title = "Enjoy",
-			Description = "Enjoy", 
-			Duration = 5
-		})
-	end,
-}) 
-
 
 
 
